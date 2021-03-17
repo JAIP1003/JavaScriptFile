@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScriptinOneHrsPart2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- <button onclick="myFun()">click me </button> -->
+    <!-- <button onmouseover="myFun()">click me </button> -->
+    <!-- <button onmouseout="myFun()">click me </button>
+    <script>
+        function myFun(){
+            document.write("My name is Jai Prakash");
+        }
+    </script> -->
+<!-- // "eval" event -->
+    <!-- <form name="example">
+        <input name="calculator" size="20" type="text">
+        <input type="button" name="B1" value="calculate" onclick="myun()">
+        <input type="reset" name="B2" value="Reset">
+        Answer:<input type="text" size="20" name="answer">
+    </form>
+    <script>
+        function myun(){
+            document.example.answer.value = eval(document.example.calculator.value);
+        }
+    </script> -->
+<!-- // window.location -->
+
+<!-- <input type="button" onclick="myfun()" value="click me"> -->
+<!-- 
+<button onclick="myfun()" >click me</button>
+
+<script>
+    function myfun(){
+        //debugger:
+        window.location = "https://www.linkedin.com/in/jaip1003/";
+    } -->
+<!-- </script> -->
+
+    <!-- Dialog Box in JavaScript -->
+
+    <!-- alert(), confirm(), prompt() -->
+
+
+    <!-- Example of confirmation -->
+    <!-- <input type="button" onclick="confirmation()" name="confirm" value="click me">
+
+    <script>
+        function confirmation(){
+            var ans = confirm("Do you want to visit my website");
+            if(ans){
+                alert("you are welcomed on my page");
+                window.location = "https://www.linkedin.com/in/jaip1003/";
+            }
+            else{
+                alert("Oh No we have chosen not to visit my website");
+            }
+        }
+    </script> -->
+
+
+
+    <!-- Example of Prompt -->
+
+    <!-- <input type="button" onclick="myfun()" name="prompt" value="click me">
+
+    <script>
+        function myfun(){
+            var ans = prompt(" Hi ! I am Jai Prakash and what is your name?", "Jai prakash");
+            alert("Nice to meet you "+ ans + "!");
+            document.write(ans);
+
+            
+        }
+    </script> -->
+
+
+
+   <!-- Math object -->
+<!-- 
+   <script>
+       var ans = Math.floor(10.99);
+       var ans2 = Math.floor(10.19);
+       var ans3 = Math.floor(-10.19);
+       document.write(ans + "  "+ans2 +"  "+ans3);
+document.write("<br>");
+       var ans = Math.round(10.99);
+       var ans2 = Math.round(10.19);
+       var ans3 = Math.round(-10.19);
+       document.write(ans + "  "+ans2 +"  "+ans3);
+
+       document.write("<br>");
+       var ans = Math.log(2);
+       var ans2 = Math.log(0);
+       var ans3 = Math.log(-10);
+       document.write(ans + "  "+ans2 +"  "+ans3);
+
+       document.write("<br>");
+       var ans = Math.max(10.99, 11, 34, 56);
+       var ans2 = Math.min(10.19, 45,23, 5, 67);
+       var ans3 = Math.pow(4,2);
+       document.write(ans + "  "+ans2 +"  "+ans3);
+
+       document.write("<br>");
+       var ans = Math.random();
+       var ans2 = Math.random();
+       ans2 = ans2 * 100;
+       var ans3 = Math.random();
+       ans3 = ans3 * 10;
+       document.write(ans + "  "+ans2 +"  "+ans3); -->
+   <!-- </script> -->
+
+
+   <!-- Date method in JavaScript -->
+
+   <!-- <script>
+    //    document.write(Date());
+
+    // var dt = new Date();
+    // document.write(dt);
+    // document.write("<br>");
+    // document.write("getday : "+dt.getDay());
+    // document.write("<br>");
+    // document.write("getSeconds : "+ dt.getSeconds());
+    // document.write("<br>");
+    // document.write("getFullYear : " + dt.getFullYear());
+    // document.write("getMinutes : "+ dt.getMinutes());
+    // document.write("<br>");
+    // document.write("getTime : " + dt.getTime());
+    // document.write("<br>");
+    // document.write("getHrs : "+ dt.getHours());
+
+//     var dt = new Date("Dec 17, 2020 23:45:12");
+//     document.write(dt);
+//     document.write("<br>");
+//    // dt.setDay(5);
+//     document.write("<br>");
+//     document.write(dt);
+//     document.write("<br>");
+//     dt.setSeconds(42);
+//     document.write("<br>");
+//     document.write(dt);
+//     document.write("<br>");
+//  dt.setFullYear(2025);
+//     document.write("<br>");
+//     document.write(dt);
+//    dt.setMinutes(13);
+//     document.write("<br>");
+//     document.write(dt);
+//     document.write("<br>");
+//     //document.write("setTime : " + dt.setTime());
+//     document.write("<br>");
+
+//     document.write(dt);
+//     document.write("<br>");
+//     dt.setHours(12);
+//     document.write("<br>");
+//     document.write(dt);
+
+//    </script> -->
+
+
+
+ <!-- JavaScript Validation -->
+
+ <form name="myform"  onsubmit="return validation()"> <br></br>
+    userName : <input type="text" value="" id="user">
+    <span id="userName"></span> <br></br>
+    password : <input type="password" value="" id="pass">
+    <span id="password"></span> <br></br>
+    <input type="submit"  name="submit">
+
+ </form>
+
+ <script>
+     function validation(){
+         var usern = document.getElementById("user").value;
+         var passw = document.getElementById("pass").value;
+
+         if(usern == ""){
+            document.getElementById("userName").innerHTML = "** Please enter the username";
+            return false;
+         }
+         if(passw == ""){
+            document.getElementById("password").innerHTML = "** Please enter the password";
+            return false;
+         }
+         else{
+             alert("done";)
+             return true;
+         }
+
+     }
+ </script>
+
+
+
+</body>
+</html>
