@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.father{
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+
+.child1{
+    width: 200px;
+    height: 50px;
+ background-color: green;
+ position: absolute;
+ z-index: 1;
+
+}
+.child2{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: blue;
+   
+}
+.child3{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: yellow;
+
+}
+.child4{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: pink;
+    
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+.logo{
+    width: 30%;
+    line-height: 80px;
+    text-align: center;
+    background-color: orange; 
+    float: left;
+}
+
+.menu{
+    
+    width: 70%;
+     line-height: 80px;
+    background-color: red;  
+    float: right;
+  
+}
+.menu ul{
+    list-style-type: none;  
+    /* direction: rtl;  */
+    text-align: right;
+}
+
+.menu ul li{
+    display: inline;  
+    padding: 0 20px;
+    margin: 0 20px;
+}
