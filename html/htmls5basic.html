@@ -1,0 +1,245 @@
+
+
+<!--     
+    1) What & Why HTML5?
+    2) HOw to use HTML5?
+    3) Old vs new HTML 
+    4) New Element in Html 
+    5) Semantic Element 
+    6) New Attributes of form 
+    7) Graphics Element: <svg>
+    and <canva> -->
+
+<!-- What is HTML? 
+ -> HTML5 is markup language, has been comeinto exixtence around january 2008.
+ The two major organisation has been involve in developing html5 since its initial time.
+ One is W3C( World Wide Web Consortium ) and other one is WHATWG (Web Hypertext Application Technology Working Group) -->
+
+ <!-- Why HTML5?
+-> HTML5 introuduces numbers of new Element and Attributes that help in building modern website.
+-> The doctype declaration in html5 is very simple
+<!DOCTYPE html>
+->The character encoding (charset) is also a very simple 
+<meta charset="utf-8">
+-> HTML5 supports in all modern browser? -->
+
+
+            <!-- HTML5 new Element -->
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset='utf-8'>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <title>HTML5</title>
+                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+                <script src='main.js'></script>
+            </head>
+            <body>
+                <!-- <article>Define an article of the document</article>
+                <aside>define content aside from page content</aside> -->
+
+
+                
+                <!-- The <details></details> specifies additional details that user can view 
+                or hide on demand -->
+                <!-- <details>
+                    <summary>My profile</summary>
+                    <p>My name is Jai Prakash. Currently I am pursuing 
+                        master in Mathematics and Computing at IIT Dahanbad.
+                    I have done my B.Tech from National Institute of Technology Agartala
+                in 2019. My schooling has done from Patna.</p>
+                </details> -->
+
+
+
+                <!-- <figure></figure> -->
+                <!-- The <figure></figure> tag specifies self contained content 
+                like illustrations, diagrams, photo, code listing etc-->
+
+                    <!-- <figure>
+                        <img src="../htmlcss1/rajeJp.jpg" width="304" height="208">
+                        <figcaption>Jai Prakash</figcaption>
+                    </figure> -->
+
+            <!-- <footer> Define a footer for a document or a section</footer>
+            <header> Define a header for a document or a section</header> -->
+
+            
+            <!-- <main> Define a main content for a document</main> -->
+
+            <!-- <nav> Define navigation bar a the page</nav> -->
+            <!-- <nav>
+                <span> jai</span>
+                <span> jai</span>
+                <span> jai</span>
+                <span> jai</span>
+            </nav> -->
+
+            <!-- <progress>Represent progress of task</progress> -->
+            
+            <!-- downloading percentage:
+            <progress value="12" max="100"></progress> -->
+
+            <!-- Sementic Element -- Element with a meaning -->
+                <!-- A Semantic Element describes its meaning for both browser as well as developer -->
+<!--                 
+                 Example -- Non Semantic Element -- <div></div> <span></span>
+                Example -- Semantic Element -- <footer></footer> <header></header> <article></article> -->
+<!-- 
+                <header>
+                    <h2>My name is Jai Prakash</h2>
+                </header>
+                <nav>
+                    <a href="#" target="__blanks">HOME</a>
+                    <a href="#" target="__blanks">ABOUT</a>
+                    <a href="#" target="__blanks">CONTACT US</a>
+                    <a href="#" target="__blanks">DETAILS</a>
+                </nav>
+
+                <section>
+                    <h2>New Section</h2>
+                    <article>
+                        <h2>New Article</h2>
+                        <p>My name is Jai Prakash. Currently I am pursuing 
+                            master in Mathematics and Computing at IIT Dahanbad.
+                        I have done my B.Tech from National Institute of Technology Agartala
+                    in 2019. My schooling has done from Patna.</p>
+                    </article>
+                    <br>
+                    <article>
+                        <h2>New Article</h2>
+                        <p>My name is Jai Prakash. Currently I am pursuing 
+                            master in Mathematics and Computing at IIT Dahanbad.
+                        I have done my B.Tech from National Institute of Technology Agartala
+                    in 2019. My schooling has done from Patna.</p>
+                    </article>
+                </section>
+
+            <footer>
+                Footer
+            </footer> -->
+
+
+
+
+            <!-- Form -->
+   <!-- 1) color -->
+            <!-- <form>
+                color: <input type="color" name="color">
+                <br>
+                date: <input type="date" name="color">
+                <br>
+                Datetime: <input type="datetime-local" name="color">
+                <br>
+                email: <input type="email" name="color">
+                <br>
+                month: <input type="month" name="color">
+                <br>
+                number: <input type="number" name="quantity" min="1" max="5">
+                <br>color
+                color
+                range: <input type="range" name="color">
+                <br>
+                <input type="submit">
+            </form> -->
+
+
+
+  <!-- What is Canvas? -->
+            <!-- The HTML <canvas></canvas> is used to draw graphics on a web pages.
+            It is used to draw graphics on the fly via JavaScipt.
+            It is only a container for graphics. One must use JavaScipt to actually draw the graphics.
+            Convas has several methods to draw Paths, boxes, circles text and adding images. -->
+
+            <!-- Rectangle
+            To create a Rectangle using html convas, we can use the rect() method. Canvas Rectangle is 
+            positioned with  x and y parameter and is sezed with width and height parameters. -->
+<!--             
+            <canvas width="300px" height="200px" id="myCanvas" style="border: 2px solid #000000;"> -->
+<!-- Our browser does not support the html5 canvas  tag.
+The getContext method returns an object that 
+provides methods and properties for drawing on the canvas. 
+
+The moveTo() methpd moves the path to the specified 
+point in the canvas , without creating a line. 
+
+The lineTo method adds a new point and creates a line to 
+that point from the last specified point int the 
+canvas 
+Use the stroke() method to actually draw the path on the canvas.  -->
+<!-- 
+            </canvas>
+        
+   <script>
+       var c = document.getElementById("myCanvas");
+       var ctx = c.getContext("2d");
+       ctx.moveTo(0,0);
+       ctx.lineTo(200,200);
+       ctx.stroke();
+   </script>      -->
+
+   <!-- <canvas id="myCanvas" width="578" height="200"> </canvas>
+   <script>
+       var canvas = document.getElementById("myCanvas");
+       var context = canvas.getContext("2d");
+
+       context.beginPath();
+       context.rect(100,50,200,100);
+       context.fillStyle = "red";
+       context.fill();
+       context.lineWidth = 2;
+       context.strokeStyle = "black";
+       context.stroke();
+   </script> -->
+
+
+   <!-- What is HTML SVG? -->
+
+
+   <!-- SVG stand for Scalable Vector Graphics. 
+   SVG is used to define graphics for the web 
+   Svg is a W3C recommendation
+
+   Rectangle<rect></rect> Circle<circle></circle>
+   Ellipse<ellipse></ellipse> Line<line></line>
+    Polyline<polyline></polyline> Polygon<polygon></polygon>
+    path<path></path>    -->
+
+    <!-- <svg height="100" width="100" style="border:1px solid yellow"> 
+        <circle cx="70" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+
+    </svg> -->
+
+
+    <!-- <audio></audio> -->
+
+    <!-- The HTML <audio></audio> element specifies a standard way 
+    to embed audio in a web page.
+    The controls attribute adds audio controls like play, pause, and volume 
+    The <source> element allows us to specifies alternate audio files which the browser may choose from the 
+        browser will use the first recognized format.
+
+        The text between the <audio></audio> tag will only be displayed in browsers that don not support the <audio></audio> element  -->
+       
+        <!-- <h1>Audio Tag</h1>
+        <audio controls loop autoplay >
+           <source src="song.mp3" type="audio/mp3">
+        </audio> -->
+
+
+        <!-- video tag -->
+
+        <h1>video tag</h1>
+        <video controls width="400" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+                
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y45lh8oBzOo" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    
+    </body>
+            </html>
